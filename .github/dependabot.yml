@@ -1,0 +1,41 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "07:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: dugite
+    versions:
+    - 1.100.0
+    - 1.101.0
+    - 1.96.0
+    - 1.97.0
+    - 1.98.0
+    - 1.99.0
+  - dependency-name: "@babel/preset-env"
+    versions:
+    - 7.12.11
+    - 7.12.13
+    - 7.12.16
+    - 7.12.17
+    - 7.13.0
+    - 7.13.10
+    - 7.13.12
+    - 7.13.5
+    - 7.13.8
+    - 7.13.9
+  - dependency-name: react-select
+    versions:
+    - 4.0.2
+    - 4.1.0
+    - 4.2.0
+    - 4.2.1
+  - dependency-name: electron-mksnapshot
+    versions:
+    - 11.0.0
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
